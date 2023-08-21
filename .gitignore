@@ -24,8 +24,8 @@ __pycache__/*
 tags
 
 # logs
-./tests/output/logs
-./tests/output/toolium.log
+tests/output/toolium.log
+tests/output/logs
 
 # Package files
 *.egg
