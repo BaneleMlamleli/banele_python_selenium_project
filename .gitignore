@@ -23,6 +23,10 @@ __pycache__/*
 .vscode
 tags
 
+# logs
+./tests/output/logs
+./tests/output/toolium.log
+
 # Package files
 *.egg
 *.eggs/

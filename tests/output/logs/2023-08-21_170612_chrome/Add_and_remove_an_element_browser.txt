@@ -1,0 +1,10 @@
+
+2023-08-21 17:06:20.831549 'Add_and_remove_an_element' test logs with driver = chrome
+
+2023-08-21 17:06:15.953000	SEVERE	https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.kineticskunk.co.za%2F&u=oeu1692630375936r0.6703573076002818&wxhr=true&t=1692630375939&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2023-08-21 17:06:17.012000	SEVERE	https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1692630375936r0.6703573076002818&wxhr=true&t=1692630376990&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2023-08-21 17:06:17.208000	SEVERE	https://the-internet.kineticskunk.co.za/favicon.ico - Failed to load resource: the server responded with a status of 404 ()
+2023-08-21 17:06:17.310000	SEVERE	https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.kineticskunk.co.za%2Fadd_remove_elements%2F&u=oeu1692630375936r0.6703573076002818&wxhr=true&t=1692630377279&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2023-08-21 17:06:17.320000	SEVERE	https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1692630375936r0.6703573076002818&wxhr=true&t=1692630376990&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2023-08-21 17:06:17.320000	SEVERE	https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.kineticskunk.co.za%2F&u=oeu1692630375936r0.6703573076002818&wxhr=true&t=1692630375939&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+2023-08-21 17:06:17.432000	SEVERE	https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1692630375936r0.6703573076002818&wxhr=true&t=1692630377420&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
