@@ -1,6 +1,8 @@
 from selenium.webdriver.common.by import By
 
 from toolium.pageobjects.page_object import PageObject
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions
 from toolium.pageelements import *
 import time
 class AddRemoveElements(PageObject):
@@ -28,17 +30,16 @@ class AddRemoveElements(PageObject):
         for x in range(1,4):
             self.driver.find_element(By.XPATH, "//button[@onclick='addElement()']").click()
             self.driver.implicitly_wait(1)
+            time.sleep(1)
         
         time.sleep(3)
 
     def user_clicks_on_the_delete_button(self):
-        self.driver.implicitly_wait(5)
         self.driver.save_screenshot('user_clicks_on_the_delete_button.png')
-
-        assert self.driver.find_element(By.XPATH, "//div[@id='elements']//button[1]").is_displayed() == False, "Delete button is not displayed"
         
-        for b in range(1,4):
-            self.driver.find_element(By.XPATH, f"//div[@id='elements']//button[{b}]").click()
-            self.driver.implicitly_wait(1)
+        assert self.driver.find_element(By.XPATH, "//div[@id='elements']//button[1]").is_displayed() == True,  "Delete button is not yet displayed on the DOM"
+        
+        if self.driver.find_element(By.XPATH, "//div[@id='elements']//button[1]").is_displayed():
+            self.driver.find_element(By.XPATH, "//div[@id='elements']//button[1]").click() 
         
         time.sleep(3)
