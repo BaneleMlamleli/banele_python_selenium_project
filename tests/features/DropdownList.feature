@@ -2,7 +2,7 @@
 Feature: Demonstration when dropdown list is click and an option is selected.
 
     Background: landing page
-        Given a user is on the website home page
+        Given user is on the home page
         When user clicks on "Dropdown"
 
     Scenario: Dropdown list is click and an option is selected

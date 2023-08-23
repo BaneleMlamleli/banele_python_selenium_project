@@ -12,6 +12,7 @@ class ABTesting(PageObject):
         """
         # self.driver.get('https://the-internet.kineticskunk.co.za/')
         self.driver.get('{}'.format(self.config.get('Test', 'url')))
+        self.driver.maximize_window()
         time.sleep(3)
         return self
     

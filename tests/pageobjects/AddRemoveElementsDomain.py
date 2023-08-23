@@ -12,6 +12,7 @@ class AddRemoveElements(PageObject):
         :returns: this page object instance
         """
         self.driver.get('{}'.format(self.config.get('Test', 'url')))
+        self.driver.maximize_window()
         return self
     
     def click_on_link(self, add_remove_element):
