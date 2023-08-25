@@ -26,8 +26,7 @@ class ABTesting(PageObject):
     def redirected_to_the_abTestVariation_page(self):
         """
         confirming the page is opened
-        """
-        
+        """        
         assert self.driver.find_element(By.xpath, "//h3[normalize-space()='A/B Test Variation 1']").is_displayed() == False, 'Error. Page did not redirect or locator is incorrect'
         
         time.sleep(3)

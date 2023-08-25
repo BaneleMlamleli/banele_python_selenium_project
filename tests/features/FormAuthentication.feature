@@ -2,7 +2,7 @@
 Feature: Demonstration of a secure login area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages..
 
     Background: landing page
-        Given a user is on the website home page
+        Given user is on the home page
         When user clicks on "Form Authentication"
 
     Scenario Outline: Correct and incorrect login credentials
