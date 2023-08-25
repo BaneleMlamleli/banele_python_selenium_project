@@ -34,11 +34,33 @@ banele_python_selenium_project
 ==============================
 
 
-    Add a short description here!
+    Automating website with Python Toolium
 
 
-A longer description of your project goes here...
+Tested functionalities...
 
+- A/B Testing
+- Add/Remove Elements
+- Basic Auth
+- Drag and Drop
+- Dropdown
+- Dynamic Content
+- Dynamic Controls
+- Dynamic Loading
+- Exit Intent
+- File Upload
+- Form Authentication
+- Frames
+- Hover
+- Key Presses
+- Multiple Windows
+- JQuery UI Menus
+- JavaScript Alerts
+- Shadow Domes
+- Sortable Data Tables
+- Status Codes
+- Typos
+- WYSIWYG Editor
 
 .. _pyscaffold-notes:
 
