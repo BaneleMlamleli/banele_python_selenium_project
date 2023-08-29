@@ -10,6 +10,7 @@ import time
 class DropDownList(PageObject):
     
     def init_page_elements(self):
+        self.screenshot_path = "C:\\Users\\BaneleMlamleli\\Documents\\Programming\\python\\banele_python_selenium_project\\tests\\screenshot\\"
         self.select = Select(By.ID, 'dropdown')
         
     def home_page(self):
@@ -30,5 +31,6 @@ class DropDownList(PageObject):
     def drop_down_option(self):
         self.driver.find_element(By.XPATH, "//select[@id='dropdown']").click()
         time.sleep(1)
+        self.driver.save_screenshot(self.screenshot_path+'drop_down_list.png')
         self.driver.find_element(By.XPATH, "//option[normalize-space()='Option 1']").click()
         time.sleep(2)

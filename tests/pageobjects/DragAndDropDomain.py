@@ -6,7 +6,9 @@ from toolium.pageelements import *
 import time
 
 class DragAndDrop(PageObject):
-    # def init_page_elements(self):
+    
+    def init_page_elements(self):
+        self.screenshot_path = "C:\\Users\\BaneleMlamleli\\Documents\\Programming\\python\\banele_python_selenium_project\\tests\\screenshot\\"
     #     self.box_a = PageElements(By.XPATH, "//div[@id='column-a']")
     #     self.box_b = PageElements(By.XPATH, "//div[@id='column-b']")
     
@@ -29,6 +31,8 @@ class DragAndDrop(PageObject):
         # NOTE: I think there is a bug on the Selenium Drag and Drop
         self.box_a = self.driver.find_element(By.XPATH, "//div[@id='column-a']")
         self.box_b = self.driver.find_element(By.XPATH, "//div[@id='column-b']")
+        
+        self.driver.save_screenshot(self.screenshot_path+'drag_and_drop.png')
         
         ActionChains(self.driver).drag_and_drop(self.box_a, self.box_b).perform()
         time.sleep(3)
