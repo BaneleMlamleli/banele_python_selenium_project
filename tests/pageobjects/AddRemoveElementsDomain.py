@@ -6,6 +6,9 @@ from selenium.webdriver.support import expected_conditions
 from toolium.pageelements import *
 import time
 class AddRemoveElements(PageObject):
+    
+    def init_page_elements(self):
+        self.screenshot_path = "C:\\Users\\BaneleMlamleli\\Documents\\Programming\\python\\banele_python_selenium_project\\tests\\screenshot\\"
         
     def home_page(self):
         """ Open url in browser
@@ -33,14 +36,15 @@ class AddRemoveElements(PageObject):
             self.driver.implicitly_wait(1)
             time.sleep(1)
         
+        self.driver.save_screenshot(self.screenshot_path+'before_user_clicks_on_the_delete_button.png')
         time.sleep(3)
 
     def user_clicks_on_the_delete_button(self):
-        self.driver.save_screenshot('user_clicks_on_the_delete_button.png')
         
         assert self.driver.find_element(By.XPATH, "//div[@id='elements']//button[1]").is_displayed() == True,  "Delete button is not yet displayed on the DOM"
         
         if self.driver.find_element(By.XPATH, "//div[@id='elements']//button[1]").is_displayed():
             self.driver.find_element(By.XPATH, "//div[@id='elements']//button[1]").click() 
         
+        self.driver.save_screenshot(self.screenshot_path+'after_user_clicks_on_the_delete_button.png')
         time.sleep(3)

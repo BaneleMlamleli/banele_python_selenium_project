@@ -8,6 +8,7 @@ import time
 class FormAuthentication(PageObject):
     
     def init_page_elements(self):
+        self.screenshot_path = "C:\\Users\\BaneleMlamleli\\Documents\\Programming\\python\\banele_python_selenium_project\\tests\\screenshot\\"
         self.password = InputText(By.XPATH, "//input[@id='username']", wait=True)
         self.username = InputText(By.XPATH, "//input[@id='password']", wait=True)
         self.loginButton = Button(By.XPATH, "//button[@type='submit']", wait=True)
@@ -34,6 +35,7 @@ class FormAuthentication(PageObject):
         time.sleep(2)
         
     def login_and_confirm_login_message(self):
+        self.driver.save_screenshot(self.screenshot_path+'form_authentication.png')
         self.utils.wait_until_element_clickable(self.loginButton).click()
         # TODO: Check for response message after login
         # msgCorrectLoginDetails = self.utils.wait_until_element_visible(self.message).get_text().contains('You logged into a secure area!')

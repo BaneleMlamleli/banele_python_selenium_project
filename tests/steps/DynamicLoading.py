@@ -1,14 +1,14 @@
 from behave import given, when, then
 from pageobjects.DynamicLoadingDomain import DynamicLoading
 
-@given('user is on the home page')
-def user_is_on_the_home_page(context):
-    context.current_page = DynamicLoading()
-    context.current_page.home_page()
+# @given('user is on the home page')
+# def user_is_on_the_home_page(context):
+#     context.current_page = DynamicLoading()
+#     context.current_page.home_page()
 
-@when('user clicks on "{dynamic_loading}"')
-def user_clicks_on_button_add_element(context, dynamic_loading):
-    context.current_page.click_on_link(dynamic_loading)
+# @when('user clicks on "{dynamic_loading}"')
+# def user_clicks_on_button_add_element(context, dynamic_loading):
+#     context.current_page.click_on_link(dynamic_loading)
     
 @when('user click on "{example}"')
 def user_click_on_an_example(context, example):
